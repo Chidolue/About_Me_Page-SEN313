@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chidolue Ebube Samuel (BU23CSC1032)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <title>About Me Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="one">
+        <h1>Hello, Welcome to my site</h1>
+        <span>
+            <label for="">Please your name: </label>
+            <input id="input" type="text" placeholder="Your Name ">
+        </span>
+        <button id="enter">enter</button>
+    </section>
+
+    <section id="two">
+        <h1 id="welcome"></h1>
+    </section>
+
+    <section id="three">
+            <header>
+                <h1>Welcome ✨</h1>
+                <nav>
+                    <a href="#three">Intro</a>
+                    <a href="#likes">Likes</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+
+            <main>
+                <div class="pic">
+                    <img src="images/Profile Pic.webp" alt="" height="100%">
+                </div>
+                <div class="text">
+                    <p>My name is <strong><span id="my-name"></span></strong>, I am a 300l Computer Science Student at Bowen University an aspiring Mobile App Developer, interested in computers most especially their softwares, very eager to connect with like minded indiduals, feel free to connect on any social media platform 😁</p>
+                </div>
+            </main>
+
+            <div id="likes">
+                <h2>Likes</h2>
+                <ol>
+                    <li>
+                        <span>1. <b>Food</b> is Good that's all I can say, you can ask any doctor, even AI will agree with me 😁.</span>
+                        <img src="images/Eating.jpg" alt="Me eating">
+                    </li>
+                    <li>
+                        <span>2. I love building softwares, the ability to pull something out of my head my imagination and create it out for people to see, it's something I've fallen in love with.</span>
+                        <img src="images/code.jpeg" alt="Cycle">
+                    </li>
+                </ol>
+            </div>
+
+            <div id="projects">
+                <h2>Projects <br> <span id="small">These are some of the projects I've done in my little time of doing web develoment. You can check my <a id="highlight" href="https://github.com/Chidolue" target="_blank">Github</a> for more.</span></h2>
+                
+                <ol>
+                    <li>
+                        <span><b>1. Weather app</b> <br>In this project, I built a Weather Application using React. The app allowed users to search for weather information by city name, displaying details such as temperature, humidity, and weather conditions.</span>
+                        <img src="images/weather.jpg" alt="Weather App">
+                    </li>
+                    <li>
+                        <img src="images/school.jpg" alt="School Webpage">
+                        <span><b>2. School webpage</b> <br> In this project I built the 'About Us' section for a school webpage, also integrated a flipping animation when users hovered over a card as seen in the picture.</span>
+                    </li>
+                    <li>
+                        <span><b>3. Service Page</b> <br> Built a service page in react which supported dynamic routing, which improve code reusability hence reducing redundancy.</span>
+                        <img src="images/service.jpg" alt="Service Page">
+                    </li>
+                </ol>
+            </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Phone: 09139246517</li>
+            <li>Email: ebubechidolue1@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/ebube-chidolue-3453bb350/">Chidolue Ebube Samuel</a></li>
+            <li>Facebook: https://web.facebook.com/ebube.chidolue.16</li>
+        </ul>
+        
+        
+        
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
