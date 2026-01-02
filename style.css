@@ -236,7 +236,7 @@ body #projects img {
         margin: 1rem;
         display: block;
         max-width: 80%;
-        overflow: hidden;
+        border: 2px solid;
     }
 
     div ol li img {
@@ -254,6 +254,7 @@ body #projects img {
 
     #hide2 {
         display: block;
+        width: 100%;
     }
 
     #show2 {
