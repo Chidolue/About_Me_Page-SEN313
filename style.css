@@ -237,6 +237,7 @@ body #projects img {
         display: block;
         max-width: 80%;
         border: 2px solid;
+        overflow: hidden;
     }
 
     div ol li img {
