@@ -16,6 +16,7 @@
         <span>
             <label for="">Please your name: </label>
             <input id="input" type="text" placeholder="Your Name ">
+            <p id="error-empty"></p>
         </span>
         <button id="enter">enter</button>
     </section>
@@ -38,6 +39,7 @@
             <main>
                 <div class="pic">
                     <img src="images/Profile Pic.webp" alt="" height="100%">
+                    <img id="mobile" src="images/mobile.png" alt="" height="100%">
                 </div>
                 <div class="text">
                     <p>My name is <strong><span id="my-name"></span></strong>, I am a 300l Computer Science Student at Bowen University an aspiring Mobile App Developer, interested in computers most especially their softwares, very eager to connect with like minded indiduals, feel free to connect on any social media platform 😁</p>
@@ -64,15 +66,21 @@
                 <ol>
                     <li>
                         <span><b>1. Weather app</b> <br>In this project, I built a Weather Application using React. The app allowed users to search for weather information by city name, displaying details such as temperature, humidity, and weather conditions.</span>
-                        <img src="images/weather.jpg" alt="Weather App">
+                        <img class="original" src="images/weather.jpg" alt="Weather App">
+                        <img class="copy" src="images/weather - Copy.jpg" alt="Weather App">
                     </li>
+
                     <li>
-                        <img src="images/school.jpg" alt="School Webpage">
-                        <span><b>2. School webpage</b> <br> In this project I built the 'About Us' section for a school webpage, also integrated a flipping animation when users hovered over a card as seen in the picture.</span>
+                        <span id="hide2"><b>2. School webpage</b> <br> In this project I built the 'About Us' section for a school webpage, also integrated a flipping animation when users hovered over a card as seen in the picture.</span>
+                        <img class="original" src="images/school.jpg" alt="School Webpage">
+                        <img class="copy" src="images/school - Copy.jpg" alt="School Webpage">
+                        <span id="show2"><b>2. School webpage</b> <br> In this project I built the 'About Us' section for a school webpage, also integrated a flipping animation when users hovered over a card as seen in the picture.</span>
                     </li>
+
                     <li>
                         <span><b>3. Service Page</b> <br> Built a service page in react which supported dynamic routing, which improve code reusability hence reducing redundancy.</span>
-                        <img src="images/service.jpg" alt="Service Page">
+                        <img class="original" src="images/service.jpg" alt="Service Page">
+                        <img class="copy" src="images/service - Copy.jpg" alt="Service Page">
                     </li>
                 </ol>
             </div>

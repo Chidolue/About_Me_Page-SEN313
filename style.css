@@ -78,6 +78,12 @@ nav a, #contact a {
 
 #one input {
     height: 1.5rem;
+    padding-left: 0.1rem;
+}
+
+#error-empty {
+    color: red;
+    font-size: 0.8rem;
 }
 
 #enter {
@@ -90,7 +96,10 @@ nav a, #contact a {
     margin: 0.5rem auto 0;
     outline: none;
     border: none;
+}
 
+#enter:hover {
+    background-color: #1a659e;
 }
 
 #my-name {
@@ -128,12 +137,6 @@ main {
     margin-bottom: 10rem;
 }
 
-.pic {
-}
-
-.pic img {
-}
-
 body .text {
     width: 40%;
     display: flex;
@@ -143,7 +146,7 @@ body .text {
 }
 
 #likes, #projects {
-    border: 2px solid;
+    border: 2px solid #D6E4F5;
     min-height: 97vh;
 }
 
@@ -181,4 +184,79 @@ body #projects img {
 
 #projects {
     padding-bottom: 2rem;
+}
+
+#mobile {
+    display: none;
+}
+
+.copy {
+    display: none;
+}
+
+#hide2 {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        display: block;
+        max-height: 93vh;
+        margin-bottom: 0;
+    }
+
+    main img {
+        display: none;
+        margin: 3rem auto 0;
+        border: 2px solid #D6E4F5;
+    }
+
+    #mobile {
+        display: block;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    body .text {
+        width: 70%;
+        margin: 0 auto 0;
+        padding-top: 2rem;
+    }
+
+    div h2 {
+        margin: 0 1.5rem;
+    }
+
+    div ol li {
+        margin: 1rem;
+        display: block;
+        max-width: 80%;
+        overflow: hidden;
+    }
+
+    div ol li img {
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .original {
+        display: none;
+    }
+
+    .copy {
+        display: block;
+    }
+
+    #hide2 {
+        display: block;
+    }
+
+    #show2 {
+        display: none;
+    }
 }

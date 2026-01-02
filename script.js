@@ -6,20 +6,27 @@ const enterBtn = document.getElementById("enter");
 const input = document.getElementById("input")
 const welcome = document.getElementById("welcome");
 const myName = document.getElementById("my-name");
+const errorEmpty = document.getElementById("error-empty");
 
 enterBtn.addEventListener("click", function() {
     let name = input.value;
-    console.log(name);
-    section1.style.display = "none";
-    section2.style.display = "flex";
-    section2.textContent = `Welcome ${name} 🎉`;
-    
-    setTimeout(function() {
-        section2.style.display = "none";
-        section3.style.display = "block";
-        typeWriter();
-        section4.style.display = "block";
-    }, 3000);
+
+    if(name) {
+        section1.style.display = "none";
+        section2.style.display = "flex";
+        section2.textContent = `Welcome ${name} 🎉`;
+        
+        setTimeout(function() {
+            section2.style.display = "none";
+            section3.style.display = "block";
+            typeWriter();
+            section4.style.display = "block";
+        }, 3000);
+    }
+    else {
+        errorEmpty.textContent = "You cannot leave name blank";
+    }
+
 })
 
 const text = "Chidolue Ebube Samuel";
